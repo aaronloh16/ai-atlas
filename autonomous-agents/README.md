@@ -33,8 +33,20 @@ Autonomous or semi-autonomous systems that execute multi-step software tasks wit
 - Category: Autonomous Agents
 - What it is: Personal AI agent platform with workflow and automation orientation.
 - Why it matters: Demonstrates productized autonomous agent patterns beyond simple chat.
-- Best for: Teams building assistant-like autonomous products.
+- Best for: Builders developing personal or channel-integrated assistants.
 - Best paired with: Memory systems, MCP servers.
+
+## OpenClaw verified use cases
+
+Source-backed examples only (from official showcase/docs and linked repos):
+
+- Multi-channel personal assistant across WhatsApp/Telegram/Slack/Discord and other channels ([OpenClaw README](https://github.com/openclaw/openclaw), [Docs](https://docs.openclaw.ai/channels)).
+- Home Assistant integrations via community add-on and skill workflows ([HA add-on](https://github.com/ngutman/openclaw-ha-addon), [Home Assistant skill reference](https://docs.openclaw.ai/start/showcase)).
+- Voice and phone bridge experiments using community bridge projects ([Clawdia bridge](https://github.com/alejandroOPI/clawdia-bridge), [Showcase](https://docs.openclaw.ai/start/showcase)).
+- Home automation dashboard workflows from community projects ([GoHome](https://github.com/joshp123/gohome), [Showcase](https://docs.openclaw.ai/start/showcase)).
+
+Evidence note:
+- These are confirmed as existing projects/repos, not outcome guarantees.
 
 ## Honorable mentions
 
@@ -54,6 +66,6 @@ Autonomous or semi-autonomous systems that execute multi-step software tasks wit
 
 ## How to choose
 
-- Use `OpenHands` as your default baseline for autonomous software development.
-- Add SDK-driven extension when you need domain-specific behaviors.
-- Treat eval/observability as mandatory before increasing autonomy.
+- Use `OpenHands` as a baseline for autonomous software development.
+- Use `OpenClaw` when you need personal-assistant and multi-channel automation patterns.
+- Treat eval and observability as mandatory before increasing autonomy.

@@ -1,24 +1,69 @@
 # AI Coding Stack
 
-A practical stack for AI-assisted software development with strong context and quality loops.
+Practical stack recipes for AI-assisted software development with clear tradeoffs.
 
-## Core stack
-- Claude Code or Continue or Aider
-- React Grab
-- MCP
-- Promptfoo
-- Langfuse
+## Stack 1: Beginner fast-start
+
+Goal: Ship quickly with minimal setup.
+
+- Coding interface: GitHub Copilot or Continue
+- Prompted coding partner: Claude Code (for terminal tasks)
+- Eval baseline: Promptfoo
+- Basic tracing: Langfuse
+- Bridge layer: MCP (only for tools you actually use)
+
+Why this works:
+- Easy IDE onboarding + one terminal agent + one eval tool avoids early complexity.
+
+When to switch:
+- Move to stack 2 when you are spending most time in terminal and need deeper repo automation.
+
+## Stack 2: Solo terminal power-user
+
+Goal: Maximize speed in terminal-native workflows.
+
+- Primary interface: Claude Code
+- Secondary comparator: OpenAI Codex (CLI)
+- Safety/eval gate: Promptfoo in CI
+- Telemetry: Langfuse
+- Context/tools: MCP servers + lightweight repo memory docs
+
+Why this works:
+- Fast command-driven iteration plus explicit quality gates before merge.
+
+When to switch:
+- Move to stack 3 when multiple engineers need shared policy controls and auditability.
+
+## Stack 3: Team reliability + governance
+
+Goal: Reduce risk while scaling coding-agent usage across teams.
+
+- IDE assistant: GitHub Copilot or Continue
+- Task/autonomy layer: OpenHands (sandboxed) for scoped tasks
+- Routing/control: LiteLLM or gateway layer for provider policy
+- Observability: Langfuse traces + OpenLLMetry
+- Eval and guardrails: Promptfoo + Guardrails
+- CI policy: required tests, approval checks, and rollout gating
+
+Why this works:
+- Combines mainstream dev UX with explicit governance and production safety checks.
 
 ## Suggested architecture
-- Coding interface: Claude Code / Continue / Aider
-- Context capture: React Grab
+
+- Developer interface: IDE assistant and/or terminal agent
 - Tool/data bridge: MCP servers
-- Quality gate: Promptfoo in CI
-- Runtime telemetry: Langfuse traces and feedback
+- Evaluation: Promptfoo suites in CI
+- Runtime telemetry: Langfuse traces + error feedback
+- Safety controls: approval gates, sandboxed execution, rollback path
 
 ## Who this is for
-- Developers and small teams shipping code daily with AI assistance.
+
+- Beginners who want a clean starting point
+- Solo builders shipping quickly
+- Teams that need reliability and governance for agentic coding
 
 ## Swap options
-- Replace Claude Code with Cline for IDE-native autonomy.
-- Add LiteLLM if you want provider routing and fallback.
+
+- Replace Copilot with Continue where provider flexibility is required.
+- Replace OpenHands with lighter agent flows when full autonomy is unnecessary.
+- Add DeepEval or OpenAI Evals when you need deeper benchmark-style testing.

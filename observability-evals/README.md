@@ -23,7 +23,7 @@ Tooling for tracing, quality evaluation, safety checks, routing, and reliability
 ## OpenAI Evals
 - Link: https://github.com/openai/evals
 - Category: Observability Evals
-- What it is: Framework for evaluating language model behavior on tasks/benchmarks.
+- What it is: Framework for evaluating language model behavior on tasks and benchmarks.
 - Why it matters: Establishes rigorous evaluation baselines and regression checks.
 - Best for: Teams needing structured model quality measurements.
 - Best paired with: Promptfoo, DeepEval.
@@ -43,6 +43,18 @@ Tooling for tracing, quality evaluation, safety checks, routing, and reliability
 - Why it matters: Simplifies routing, fallback, and provider abstraction.
 - Best for: Teams avoiding provider lock-in.
 - Best paired with: Portkey Gateway, Langfuse.
+
+## Minimum safe setup for coding agents in production
+
+Use this baseline before giving coding agents repository write access:
+
+- Trace every run (`Langfuse` or equivalent) with prompt, tool call, and output capture.
+- Run CI eval checks (`Promptfoo`) for high-risk workflows before merge.
+- Require human approval for destructive commands, migrations, and deploy steps.
+- Enforce sandboxed execution with least-privilege credentials.
+- Add output validation (`Guardrails`) for files that affect security/compliance.
+- Keep model routing fallback (`LiteLLM` or gateway) to reduce outage risk.
+- Maintain incident playbook and rollback path for failed agent changes.
 
 ## Honorable mentions
 
@@ -86,5 +98,5 @@ Tooling for tracing, quality evaluation, safety checks, routing, and reliability
 ## How to choose
 
 - Start with tracing (`Langfuse`) and CI evals (`Promptfoo`) first.
-- Add provider routing (`LiteLLM`) when you need redundancy/cost control.
+- Add provider routing (`LiteLLM`) when you need redundancy and cost control.
 - Add guardrails for reliability-critical user flows.
