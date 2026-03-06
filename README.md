@@ -60,6 +60,8 @@ Out of scope:
 - [Communities](./communities/README.md)
 - [External Lists](./external-lists/README.md)
 - [Stacks](./stacks/README.md)
+- [Research Method](./research-method.md)
+- [March 2026 Sentiment Report](./reports/mar-2026-tool-sentiment.md)
 
 ## Entry format
 
@@ -69,6 +71,11 @@ Each entry should answer:
 - Who it is for
 - What it pairs with
 - Canonical link
+- Evidence window
+- Evidence sources
+- Confidence
+- Caveats or failure modes
+- Last verified date
 
 Template:
 
@@ -80,6 +87,11 @@ Template:
 - Why it matters: Why builders should care.
 - Best for: Primary user profile.
 - Best paired with: 2-5 adjacent tools/protocols.
+- Evidence window: YYYY-MM-DD to YYYY-MM-DD.
+- Evidence sources: 2+ source types (for example, official docs + usage metrics).
+- Confidence: High | Medium | Low.
+- Caveats / failure modes: 1-2 practical risks or limitations.
+- Last verified: YYYY-MM-DD.
 ```
 
 ## Contributing
