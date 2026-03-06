@@ -1,0 +1,50 @@
+# Context Engineering
+
+Tools and patterns that improve context quality for coding and agent workflows.
+
+## Top tools
+
+## React Grab
+- Link: https://github.com/aidenybai/react-grab
+- Category: Context Engineering
+- What it is: Tool to click live React components and capture relevant code context.
+- Why it matters: Reduces context gathering friction in fast vibecoding loops.
+- Best for: Frontend builders collaborating with coding agents.
+- Best paired with: Claude Code, Continue, MCP.
+
+## Jina Reader
+- Link: https://github.com/jina-ai/reader
+- Category: Context Engineering
+- What it is: Readability/context extraction utility for clean content ingestion.
+- Why it matters: Improves retrieval and prompt quality by reducing noisy source text.
+- Best for: Builders creating context pipelines and RAG ingestion.
+- Best paired with: LlamaIndex, Haystack, vector databases.
+
+## Context Awesome
+- Link: https://www.context-awesome.com/
+- Category: Context Engineering
+- What it is: Discovery hub focused on context tools and workflows.
+- Why it matters: Helps teams track emerging context-engineering practices.
+- Best for: Builders staying current on context stack evolution.
+- Best paired with: MCP ecosystem and coding tools.
+
+## Honorable mentions
+
+## MCP
+- Link: https://github.com/modelcontextprotocol/modelcontextprotocol
+- Category: Context Engineering
+- What it is: Protocol standard for context/tool access.
+- Why it matters: Underpins structured context delivery at runtime.
+- Best for: Teams standardizing context interfaces.
+- Best paired with: MCP servers, coding agents.
+
+## Related categories
+- [MCP](../mcp/README.md)
+- [RAG Indexing](../rag-indexing/README.md)
+- [AI Coding Tools](../ai-coding-tools/README.md)
+
+## How to choose
+
+- Use `React Grab` for UI-heavy codebases.
+- Use structured ingestion (`Jina Reader`) before retrieval indexing.
+- Standardize access with MCP when multiple tools/systems are involved.
