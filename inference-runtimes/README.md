@@ -44,7 +44,23 @@ Local and self-hosted model runtimes for development, privacy, and cost control.
 - Best for: Production teams serving models at scale, especially multi-turn workloads.
 - Best paired with: LiteLLM, observability stack, custom serving infrastructure.
 
+## TensorRT-LLM
+- Link: https://github.com/NVIDIA/TensorRT-LLM
+- Category: Inference Runtimes
+- What it is: NVIDIA's open-source high-performance LLM inference library with FP8/FP4 quantization, speculative decoding, and disaggregated serving.
+- Why it matters: The gold standard for NVIDIA GPU optimization. New AutoDeploy feature (Feb 2026) compiles PyTorch models into optimized graphs automatically. Supports B200 and RTX 50 series.
+- Best for: Teams deploying on NVIDIA GPUs who need maximum inference performance.
+- Best paired with: vLLM, SGLang, LiteLLM, observability stack.
+
 ## Honorable mentions
+
+## Llamafile
+- Link: https://github.com/mozilla-ai/llamafile
+- Category: Inference Runtimes
+- What it is: Single-file LLM executable that runs on 6 OSes with zero installation — uses Cosmopolitan Libc + llama.cpp.
+- Why it matters: Most radical approach to AI accessibility. Mozilla-backed. 10x prompt eval speedup from custom matrix multiplication kernels. No dependencies, no setup.
+- Best for: Demos, air-gapped environments, and anyone who wants the simplest possible local LLM experience.
+- Best paired with: Standalone use, edge deployments.
 
 ## Open WebUI
 - Link: https://github.com/open-webui/open-webui
@@ -73,3 +89,5 @@ Local and self-hosted model runtimes for development, privacy, and cost control.
 - Choose `llama.cpp` for low-level performance control.
 - Choose `vLLM` for production serving with the most mature ecosystem.
 - Choose `SGLang` when peak throughput and multi-turn performance matter most.
+- Choose `TensorRT-LLM` for maximum NVIDIA GPU optimization.
+- Choose `Llamafile` when you need zero-install, single-file simplicity.

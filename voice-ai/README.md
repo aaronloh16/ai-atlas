@@ -38,6 +38,14 @@ Realtime and voice-first frameworks for conversational AI products.
 
 ## Honorable mentions
 
+## Cartesia
+- Link: https://cartesia.ai
+- Category: Voice AI
+- What it is: Ultra-low-latency TTS API with emotion, laughter, and 15-second voice cloning. Sonic-3 engine delivers 40ms time-to-first-audio.
+- Why it matters: Fastest TTS in the market. The only streaming TTS that laughs and emotes naturally. 40+ languages.
+- Best for: Teams where voice latency is the critical constraint.
+- Best paired with: Pipecat, LiveKit, any real-time voice pipeline.
+
 ## Pipecat Flows
 - Link: https://github.com/pipecat-ai/pipecat-flows
 - Category: Voice AI

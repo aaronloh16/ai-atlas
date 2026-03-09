@@ -49,8 +49,8 @@ Most "AI directories" become noisy link dumps. AI Atlas is intentionally differe
 ### Run and serve
 | Category | What's inside | Key tools |
 |---|---|---|
-| [Inference Runtimes](./inference-runtimes/README.md) | Local and self-hosted model execution | Ollama, llama.cpp, vLLM, SGLang, Open WebUI |
-| [Voice AI](./voice-ai/README.md) | Realtime voice and multimodal AI | Pipecat, LiveKit, ElevenLabs, Vapi |
+| [Inference Runtimes](./inference-runtimes/README.md) | Local and self-hosted model execution | Ollama, llama.cpp, vLLM, SGLang, TensorRT-LLM, Open WebUI |
+| [Voice AI](./voice-ai/README.md) | Realtime voice and multimodal AI | Pipecat, LiveKit, ElevenLabs, Vapi, Cartesia |
 
 ### Observe and evaluate
 | Category | What's inside | Key tools |
