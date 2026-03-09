@@ -1,6 +1,6 @@
 # AI Atlas
 
-A curated map of the tools, frameworks, protocols, and workflows that matter for building with AI — **120+ tools across 18 categories**.
+A curated map of the tools, frameworks, protocols, and workflows that matter for building with AI — **118 tools across 18 categories**.
 
 For developers, builders, and curious semi-technical people who want one place to stay caught up with AI without drowning in hype, spam, and scattered bookmarks.
 
