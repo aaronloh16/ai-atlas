@@ -4,12 +4,12 @@ Persistent and structured memory systems for long-running agents and personalize
 
 ## Top tools
 
-## MemGPT
-- Link: https://github.com/deductive-ai/MemGPT
+## Letta (formerly MemGPT)
+- Link: https://github.com/letta-ai/letta
 - Category: Memory
-- What it is: Memory management architecture for extending effective context in LLM agents.
-- Why it matters: Introduces practical memory tiering patterns for long-horizon agent behavior.
-- Best for: Builders working on persistent, personalized assistants.
+- What it is: Stateful agent platform with persistent memory that survives across sessions and models. Evolved from MemGPT into a full platform with Context Repositories (git-based memory versioning), Conversations API, and Letta Code.
+- Why it matters: Pioneered practical memory tiering for LLM agents. Now a complete platform where agents persist and operate autonomously with memory that survives model changes.
+- Best for: Builders working on persistent, personalized assistants that need memory beyond a single conversation.
 - Best paired with: Agent frameworks, vector databases, eval tooling.
 
 ## Supermemory
@@ -35,6 +35,14 @@ Persistent and structured memory systems for long-running agents and personalize
 - Why it matters: Useful when relationship-aware memory structures matter.
 - Best for: Builders modeling entity/relationship memory.
 - Best paired with: Agent frameworks, observability.
+
+## Mem0
+- Link: https://github.com/mem0ai/mem0
+- Category: Memory
+- What it is: Universal memory layer for AI agents — dynamically extracts, consolidates, and retrieves salient information across sessions.
+- Why it matters: 26% improvement over OpenAI baselines on long-term memory benchmarks. Supports MCP server mode for integration with Claude Desktop, Cursor, and custom agents.
+- Best for: Teams building personalized AI products that need to remember user context across conversations.
+- Best paired with: Agent frameworks, MCP ecosystem, vector databases.
 
 ## Honorable mentions
 
