@@ -1,28 +1,20 @@
 # AI Atlas
 
-A curated map of the tools, frameworks, protocols, and workflows that matter for building with AI — **120+ tools and resources across 18 categories**.
+A collection of cool AI tools, frameworks, and workflows I've been finding and organizing.
 
-For developers, builders, and curious semi-technical people who want one place to stay caught up with AI without drowning in hype, spam, and scattered bookmarks.
+You know that feeling when a friend shows you their setup and it's way better than yours? That keeps happening to me. So I started putting everything in one place — the tools, the stacks, the workflows — so I (and hopefully you) can always see what's out there and stay current.
 
-## Why this exists
+**This is very much a work in progress.** There are gaps, things that are out of date, and whole categories that probably need to exist but don't yet. If you've got something good, please contribute.
 
-Most "AI directories" become noisy link dumps. AI Atlas is intentionally different:
-
-- **Curated for signal, not volume** — every entry earns its place
-- **Canonical links** over copied summaries
-- **Ecosystem structure** over alphabetical sprawl
-- **Tool relationships and stack fit** over hype
-- **Freshness** over completeness theater
-
-## Quick start
+## Where to start
 
 | Goal | Where to go |
 |---|---|
-| **New to AI?** | [Learning Paths](./learning-paths/README.md) — 28 concrete challenges from beginner to advanced |
-| **Building something specific?** | [Stacks](./stacks/README.md) — 6 opinionated starter recipes for common goals |
-| **Exploring the landscape?** | Browse the Atlas Map below |
+| New to AI? | [Learning Paths](./learning-paths/README.md) — challenges from beginner to advanced |
+| Building something specific? | [Stacks](./stacks/README.md) — starter recipes for common goals |
+| Just browsing? | Check out the map below |
 
-## Atlas Map
+## The Map
 
 ### Build with AI
 | Category | What's inside | Key tools |
@@ -67,49 +59,21 @@ Most "AI directories" become noisy link dumps. AI Atlas is intentionally differe
 | [External Lists](./external-lists/README.md) | Canonical curated lists we link to instead of duplicating |
 
 ### Reference
-- [Research Method](./research-method.md) — how entries are ranked and verified
-- [March 2026 Sentiment Report](./reports/mar-2026-tool-sentiment.md) — latest usage data snapshot
-
-## Scope
-
-**Included:** AI coding tools, agent frameworks, autonomous agents, MCP, context engineering, RAG, memory, vector databases, inference runtimes, AI app frameworks, voice AI, browser agents, observability/evals, learning paths, stacks, explainers, communities, and curated external references.
-
-**Out of scope:** Generic AI startup directories, dataset hubs, model leaderboards, consumer AI app lists.
+- [How tools get picked](./research-method.md)
+- [March 2026 snapshot](./reports/mar-2026-tool-sentiment.md) — usage numbers and vibes
 
 ## Entry format
 
-Each entry should answer:
-- What it is
-- Why it matters
-- Who it is for
-- What it pairs with
-- Canonical link
-- Evidence window
-- Evidence sources
-- Confidence
-- Caveats or failure modes
-- Last verified date
-
-Template:
-
-```md
-## Tool Name
-- Link: https://canonical-link
-- Category: Category Name
-- What it is: One-sentence definition.
-- Why it matters: Why builders should care.
-- Best for: Primary user profile.
-- Best paired with: 2-5 adjacent tools/protocols.
-- Evidence window: YYYY-MM-DD to YYYY-MM-DD.
-- Evidence sources: 2+ source types (for example, official docs + usage metrics).
-- Confidence: High | Medium | Low.
-- Caveats / failure modes: 1-2 practical risks or limitations.
-- Last verified: YYYY-MM-DD.
-```
+Each tool entry has:
+- **Link** — where to find it
+- **What it is** — one sentence
+- **Why it matters** — why you'd care
+- **Best for** — who should look at this
+- **Best paired with** — what it works well with
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before opening a PR. High-signal edits are preferred over bulk additions.
+This needs a lot of help. If you know a tool that should be here, or a workflow that's been working well for you, open a PR. See [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ## License
 

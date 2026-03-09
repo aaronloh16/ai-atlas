@@ -1,12 +1,8 @@
 # Learning Paths
 
-Practical starting points for students and builders who keep asking "where do I start with AI?"
+Stuff to actually try if you want to learn AI tools. Not tutorials — just concrete things to build and explore.
 
-These are not tutorials. They are concrete challenges — each one produces a visible artifact, teaches a transferable skill, and connects to tools already mapped in the Atlas.
-
-## How to use this list
-
-Pick any challenge that matches your current skill level. Do the thing. Ship it. Move to the next one.
+Pick something that looks interesting, do it, and move on to the next one.
 
 ## Build & Ship
 
