@@ -20,6 +20,14 @@ Tools for automating web navigation, browser actions, and computer-use tasks wit
 - Best for: Builders prototyping computer-use assistants.
 - Best paired with: Agent frameworks, eval stacks.
 
+## Playwright MCP
+- Link: https://github.com/microsoft/playwright-mcp
+- Category: Browser Agents
+- What it is: MCP server that gives AI agents browser automation capabilities via Playwright — uses structured accessibility snapshots instead of vision models.
+- Why it matters: Connects browser automation directly to any MCP-compatible agent (Claude, Cursor, etc.) without screenshots or computer-use models.
+- Best for: Agent builders who need reliable web interaction without vision model overhead.
+- Best paired with: MCP ecosystem, Stagehand, agent frameworks.
+
 ## Honorable mentions
 
 ## Related categories

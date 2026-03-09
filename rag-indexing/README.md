@@ -28,6 +28,14 @@ Frameworks and tooling for retrieval-augmented generation, document indexing, an
 - Best for: Teams prioritizing production-grade retrieval robustness.
 - Best paired with: Milvus/Weaviate/Qdrant, eval frameworks.
 
+## Unstructured
+- Link: https://github.com/Unstructured-IO/unstructured
+- Category: RAG Indexing
+- What it is: Open-source ETL for transforming complex documents (PDFs, emails, scanned docs) into clean, structured formats for LLMs.
+- Why it matters: RAG quality starts with document processing. Unstructured handles the hardest part — extracting structure from messy real-world documents. Hosted platform processes 15M+ pages/hour.
+- Best for: Teams building RAG pipelines over enterprise documents (contracts, reports, invoices).
+- Best paired with: LlamaIndex, LangChain, vector databases.
+
 ## Honorable mentions
 
 ## DSPy

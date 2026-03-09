@@ -36,6 +36,14 @@ Core storage and retrieval engines for embeddings, semantic search, and hybrid r
 - Best for: Teams handling large datasets and throughput demands.
 - Best paired with: Haystack, LlamaIndex.
 
+## Pinecone
+- Link: https://www.pinecone.io
+- Category: Vector Databases
+- What it is: Fully managed serverless vector database with hybrid search, integrated reranking, and enterprise features (BYOC, HIPAA, RBAC).
+- Why it matters: Leading managed vector DB. Serverless architecture with 20-100ms latency on billion-vector datasets. Recently added BYOC on all three major clouds.
+- Best for: Teams that want managed infrastructure with enterprise compliance and no operational overhead.
+- Best paired with: LlamaIndex, LangChain, Unstructured, n8n.
+
 ## Honorable mentions
 
 ## FAISS
@@ -51,8 +59,18 @@ Core storage and retrieval engines for embeddings, semantic search, and hybrid r
 - [Memory](../memory/README.md)
 - [Inference Runtimes](../inference-runtimes/README.md)
 
+## pgvector
+- Link: https://github.com/pgvector/pgvector
+- Category: Vector Databases
+- What it is: Open-source vector similarity search extension for PostgreSQL.
+- Why it matters: If you already use PostgreSQL, pgvector adds vector search without a separate database. Zero new infrastructure.
+- Best for: Teams that want vector search inside their existing PostgreSQL stack.
+- Best paired with: Supabase, Django, Rails, any PostgreSQL-based app.
+
 ## How to choose
 
-- Start with `Qdrant` for balanced default choice.
+- Start with `Qdrant` for balanced open-source default.
+- Choose `Pinecone` when you want fully managed with enterprise features.
+- Use `pgvector` when you already have PostgreSQL and want to avoid a new service.
 - Move to `Milvus` for larger-scale workloads.
 - Use `Chroma` for rapid prototyping and local iteration.

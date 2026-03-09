@@ -36,6 +36,14 @@ Local and self-hosted model runtimes for development, privacy, and cost control.
 - Best for: Teams wanting API compatibility with self-hosted models.
 - Best paired with: Open WebUI, Continue, LiteLLM.
 
+## SGLang
+- Link: https://github.com/sgl-project/sglang
+- Category: Inference Runtimes
+- What it is: High-performance LLM serving framework developed by LMSYS — runs on 400K+ GPUs generating trillions of tokens daily.
+- Why it matters: Matches or beats vLLM on throughput (~16,200 tok/s on H100 vs vLLM's ~12,500). Used by xAI (Grok 3) and Microsoft Azure. RadixAttention innovation enables efficient prefix sharing.
+- Best for: Production teams serving models at scale, especially multi-turn workloads.
+- Best paired with: LiteLLM, observability stack, custom serving infrastructure.
+
 ## Honorable mentions
 
 ## Open WebUI
@@ -63,4 +71,5 @@ Local and self-hosted model runtimes for development, privacy, and cost control.
 
 - Choose `Ollama` for easiest local developer experience.
 - Choose `llama.cpp` for low-level performance control.
-- Choose `vLLM` when serving throughput is the primary requirement.
+- Choose `vLLM` for production serving with the most mature ecosystem.
+- Choose `SGLang` when peak throughput and multi-turn performance matter most.

@@ -44,6 +44,30 @@ Frameworks for orchestrating tools, memory, planning, and multi-step agent workf
 - Best for: Data-rich agent and assistant apps.
 - Best paired with: Qdrant, Langfuse, Promptfoo.
 
+## OpenAI Agents SDK
+- Link: https://github.com/openai/openai-agents-python
+- Category: Agent Frameworks
+- What it is: Lightweight production-ready SDK for building agentic apps — agents, handoffs, guardrails, and sessions with minimal abstractions.
+- Why it matters: Successor to Swarm. Thin runtime over GPT models with built-in tool call loops and state management.
+- Best for: Teams committed to OpenAI models who want a simple, opinionated agent runtime.
+- Best paired with: OpenAI APIs, Langfuse, Promptfoo.
+
+## Google Agent Development Kit (ADK)
+- Link: https://google.github.io/adk-docs/
+- Category: Agent Frameworks
+- What it is: Google's open-source framework for building and orchestrating AI agents with multi-agent support and tracing.
+- Why it matters: Native Gemini integration, built-in session management, and support for other model providers.
+- Best for: Teams in the Google/GCP ecosystem or building multi-agent orchestration.
+- Best paired with: Gemini models, A2A protocol, Langfuse.
+
+## Mastra
+- Link: https://github.com/mastra-ai/mastra
+- Category: Agent Frameworks
+- What it is: TypeScript-first agent framework (from the Gatsby team) with built-in RAG, workflows, memory, and orchestration.
+- Why it matters: Leading TS agent framework. Production-proven at Marsh McLennan (75K employees) and SoftBank.
+- Best for: TypeScript/Node.js teams building backend agent systems.
+- Best paired with: Vercel AI SDK, MCP, Langfuse.
+
 ## Honorable mentions
 
 ## Haystack
@@ -78,7 +102,10 @@ Frameworks for orchestrating tools, memory, planning, and multi-step agent workf
 
 ## How to choose
 
-- Start with `LangChain` for ecosystem breadth.
+- Start with `LangChain` for ecosystem breadth and Python flexibility.
+- Use `OpenAI Agents SDK` for simple, opinionated agent loops on OpenAI models.
+- Use `Google ADK` for Gemini-native multi-agent orchestration.
+- Use `Mastra` for TypeScript-first agent development.
 - Use `CrewAI`/`AutoGen` for role-based multi-agent workflows.
 - Use `Semantic Kernel` for enterprise SDK patterns.
 - Use `LlamaIndex`/`Haystack` when retrieval quality is central.

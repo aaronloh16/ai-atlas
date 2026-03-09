@@ -28,6 +28,14 @@ Tools and patterns that improve context quality for coding and agent workflows.
 - Best for: Builders staying current on context stack evolution.
 - Best paired with: MCP ecosystem and coding tools.
 
+## Repomix
+- Link: https://github.com/yamadashy/repomix
+- Category: Context Engineering
+- What it is: Packs entire repositories into a single AI-friendly file (XML, Markdown, JSON, or plain text) with token counting and security checks.
+- Why it matters: Solves the core context engineering problem — getting your full codebase into an LLM's context window efficiently. Supports MCP server mode for direct agent integration.
+- Best for: Developers feeding codebases to Claude, ChatGPT, or any LLM for analysis, planning, or code review.
+- Best paired with: Claude Code, Cursor, MCP ecosystem.
+
 ## Honorable mentions
 
 ## MCP

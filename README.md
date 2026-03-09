@@ -1,69 +1,80 @@
 # AI Atlas
 
-A curated map of the tools, frameworks, protocols, and workflows that matter for building with AI.
+A curated map of the tools, frameworks, protocols, and workflows that matter for building with AI — **115+ tools across 18 categories**.
 
-AI Atlas is for developers, builders, and curious semi-technical people who want one place to stay caught up with AI without drowning in hype, spam, and scattered bookmarks.
+For developers, builders, and curious semi-technical people who want one place to stay caught up with AI without drowning in hype, spam, and scattered bookmarks.
 
 ## Why this exists
 
-Most "AI directories" become noisy link dumps.
+Most "AI directories" become noisy link dumps. AI Atlas is intentionally different:
 
-AI Atlas is intentionally different:
-- Curated for signal, not volume
-- Canonical links over copied summaries
-- Ecosystem structure over alphabetical sprawl
-- Tool relationships and stack fit over hype
-- Freshness over completeness theater
+- **Curated for signal, not volume** — every entry earns its place
+- **Canonical links** over copied summaries
+- **Ecosystem structure** over alphabetical sprawl
+- **Tool relationships and stack fit** over hype
+- **Freshness** over completeness theater
 
-## Scope
+## Quick start
 
-Included:
-- AI coding tools
-- Agent frameworks
-- Autonomous coding/dev agents
-- MCP ecosystem
-- Context engineering / vibecoding devtools
-- RAG / indexing
-- Memory systems
-- Vector databases
-- Local inference / runtimes
-- AI app and UI frameworks
-- Voice and realtime AI
-- Browser / computer-use automation
-- Observability / evals / guardrails
-- Curated explainers
-- Communities and discovery sources
-- Stack recipes
-- Learning paths for getting started
-
-Out of scope:
-- Generic AI startup directory
-- Dataset hub
-- Model leaderboard
-- Random consumer AI app list
+| Goal | Where to go |
+|---|---|
+| **New to AI?** | [Learning Paths](./learning-paths/README.md) — 28 concrete challenges from beginner to advanced |
+| **Building something specific?** | [Stacks](./stacks/README.md) — 6 opinionated starter recipes for common goals |
+| **Exploring the landscape?** | Browse the Atlas Map below |
 
 ## Atlas Map
 
-- [AI Coding Tools](./ai-coding-tools/README.md)
-- [Agent Frameworks](./agent-frameworks/README.md)
-- [Autonomous Agents](./autonomous-agents/README.md)
-- [MCP](./mcp/README.md)
-- [Context Engineering](./context-engineering/README.md)
-- [RAG Indexing](./rag-indexing/README.md)
-- [Memory](./memory/README.md)
-- [Vector Databases](./vector-databases/README.md)
-- [Inference Runtimes](./inference-runtimes/README.md)
-- [AI App Frameworks](./ai-app-frameworks/README.md)
-- [Voice AI](./voice-ai/README.md)
-- [Browser Agents](./browser-agents/README.md)
-- [Observability Evals](./observability-evals/README.md)
-- [Explainers](./explainers/README.md)
-- [Communities](./communities/README.md)
-- [External Lists](./external-lists/README.md)
-- [Stacks](./stacks/README.md)
-- [Learning Paths](./learning-paths/README.md)
-- [Research Method](./research-method.md)
-- [March 2026 Sentiment Report](./reports/mar-2026-tool-sentiment.md)
+### Build with AI
+| Category | What's inside | Key tools |
+|---|---|---|
+| [AI Coding Tools](./ai-coding-tools/README.md) | IDE assistants, CLI agents, vibe coding platforms | Claude Code, Copilot, Cursor, Bolt.new, Lovable, v0, Replit Agent |
+| [Agent Frameworks](./agent-frameworks/README.md) | Orchestration for multi-step agent workflows | LangChain, OpenAI Agents SDK, Google ADK, CrewAI, Mastra |
+| [Autonomous Agents](./autonomous-agents/README.md) | End-to-end autonomous software development | Devin, OpenHands, Cline, Trae Agent |
+| [AI App Frameworks](./ai-app-frameworks/README.md) | UI/app layers for shipping AI features | Vercel AI SDK, Chainlit, Dify, Flowise, Gradio, Streamlit |
+
+### Connect and extend
+| Category | What's inside | Key tools |
+|---|---|---|
+| [MCP](./mcp/README.md) | Model Context Protocol ecosystem | MCP spec, official servers, GitHub MCP, directories |
+| [Context Engineering](./context-engineering/README.md) | Improve context quality for agents | Repomix, React Grab, Jina Reader |
+| [Browser Agents](./browser-agents/README.md) | Web automation and computer-use | Stagehand, browser-use, Playwright MCP |
+
+### Data and memory
+| Category | What's inside | Key tools |
+|---|---|---|
+| [RAG Indexing](./rag-indexing/README.md) | Document processing and retrieval | LlamaIndex, LangChain, Haystack, Unstructured |
+| [Memory](./memory/README.md) | Persistent memory for long-running agents | Mem0, MemGPT/Letta, Zep, Supermemory |
+| [Vector Databases](./vector-databases/README.md) | Embedding storage and semantic search | Qdrant, Pinecone, Weaviate, Chroma, pgvector, Milvus |
+
+### Run and serve
+| Category | What's inside | Key tools |
+|---|---|---|
+| [Inference Runtimes](./inference-runtimes/README.md) | Local and self-hosted model execution | Ollama, llama.cpp, vLLM, SGLang, Open WebUI |
+| [Voice AI](./voice-ai/README.md) | Realtime voice and multimodal AI | Pipecat, LiveKit, ElevenLabs, Vapi |
+
+### Observe and evaluate
+| Category | What's inside | Key tools |
+|---|---|---|
+| [Observability & Evals](./observability-evals/README.md) | Tracing, evals, guardrails, routing | Langfuse, Promptfoo, Braintrust, Helicone, LiteLLM, Guardrails |
+
+### Learn and discover
+| Category | What's inside |
+|---|---|
+| [Learning Paths](./learning-paths/README.md) | 28 concrete challenges for getting started with AI |
+| [Stacks](./stacks/README.md) | 6 opinionated starter recipes for common goals |
+| [Explainers](./explainers/README.md) | Key ecosystem concepts and references |
+| [Communities](./communities/README.md) | High-signal communities and discovery channels |
+| [External Lists](./external-lists/README.md) | Canonical curated lists we link to instead of duplicating |
+
+### Reference
+- [Research Method](./research-method.md) — how entries are ranked and verified
+- [March 2026 Sentiment Report](./reports/mar-2026-tool-sentiment.md) — latest usage data snapshot
+
+## Scope
+
+**Included:** AI coding tools, agent frameworks, autonomous agents, MCP, context engineering, RAG, memory, vector databases, inference runtimes, AI app frameworks, voice AI, browser agents, observability/evals, learning paths, stacks, explainers, communities, and curated external references.
+
+**Out of scope:** Generic AI startup directories, dataset hubs, model leaderboards, consumer AI app lists.
 
 ## Entry format
 

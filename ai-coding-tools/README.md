@@ -92,7 +92,61 @@ Caveat:
 Failure or procurement note:
 - Misconfigured provider policies can leak cost or data if not centrally governed.
 
-## Fast-moving alternatives worth tracking
+## AI app builders (vibe coding platforms)
+
+## Bolt.new
+- Link: https://bolt.new
+- Category: AI Coding Tools
+- What it is: Browser-based AI app builder running full Node.js via WebContainers — supports React, Vue, Svelte, Next.js, Remix, and more.
+- Why it matters: Fastest path from prompt to running app with no local setup. Broadest framework support of any AI app builder.
+- Best for: Rapid prototyping and testing ideas before committing to a full codebase.
+- Best paired with: Cursor (for export and iteration), Vercel (for deployment).
+- Evidence window: 2025-06-01 to 2026-03-09.
+- Evidence sources: Official product + multiple comparison reviews.
+- Confidence: High.
+- Caveats / failure modes: No built-in database — connect your own backend. Ephemeral by nature; not a production IDE.
+- Last verified: 2026-03-09.
+
+## Lovable
+- Link: https://lovable.dev
+- Category: AI Coding Tools
+- What it is: AI fullstack engineer (formerly GPT Engineer) with deep Supabase integration for database, auth, and row-level security.
+- Why it matters: Most accessible path from idea to full-stack app for non-technical builders. $1.8B valuation signals strong market traction.
+- Best for: Non-technical founders who need working apps with real backends, not just UI mockups.
+- Best paired with: Supabase, Bolt.new, deployment platforms.
+- Evidence window: 2025-01-01 to 2026-03-09.
+- Evidence sources: Official product + funding announcements + comparison reviews.
+- Confidence: High.
+- Caveats / failure modes: Deep Supabase coupling limits backend flexibility. May need refactoring for complex production use.
+- Last verified: 2026-03-09.
+
+## v0
+- Link: https://v0.dev
+- Category: AI Coding Tools
+- What it is: Vercel's AI UI generator — produces production-quality React components from natural language prompts.
+- Why it matters: Best-in-class UI quality with minimal lock-in. Exports standard React code.
+- Best for: Frontend developers and designers who want high-quality components fast.
+- Best paired with: Vercel AI SDK, Next.js, shadcn/ui.
+- Evidence window: 2025-01-01 to 2026-03-09.
+- Evidence sources: Official product + Vercel ecosystem (6M+ developers).
+- Confidence: High.
+- Caveats / failure modes: Frontend-only — no backend generation. Best results require knowing correct component terminology.
+- Last verified: 2026-03-09.
+
+## Replit Agent
+- Link: https://replit.com/ai
+- Category: AI Coding Tools
+- What it is: Browser-based autonomous coding agent (Agent 3) with 200-minute autonomous runtime — builds, tests, and fixes apps.
+- Why it matters: Zero-setup path to working software. Can build mobile apps and create other agents. Approaching ~$9B valuation.
+- Best for: Beginners, rapid prototyping, and browser-first development with no local tooling.
+- Best paired with: Deployment platforms, Slack/Notion integrations.
+- Evidence window: 2025-09-01 to 2026-03-09.
+- Evidence sources: Official product + CNBC coverage + enterprise case studies.
+- Confidence: Medium.
+- Caveats / failure modes: Security concerns with vibe-coded output (Tenzai study). Pricing escalates for professional use.
+- Last verified: 2026-03-09.
+
+## IDE and CLI alternatives worth tracking
 
 ## Cursor
 - Link: https://cursor.com/
@@ -107,18 +161,18 @@ Failure or procurement note:
 - Caveats / failure modes: Proprietary telemetry limits independent verification of active usage claims.
 - Last verified: 2026-03-06.
 
-## Windsurf
+## Windsurf (acquired by Cognition/Devin)
 - Link: https://windsurf.com/
 - Category: AI Coding Tools
-- What it is: AI coding environment focused on speed and agentic IDE features.
-- Why it matters: Frequently discussed in competitive IDE comparisons.
-- Best for: Developers testing alternatives to incumbent IDE assistants.
+- What it is: AI coding environment focused on speed and agentic IDE features. Acquired by Cognition AI (makers of Devin) for ~$250M in December 2025.
+- Why it matters: Being merged with Devin's autonomous agent to create a combined IDE + agent experience.
+- Best for: Developers tracking the convergence of IDE assistants and autonomous agents.
 - Best paired with: Promptfoo, Langfuse.
-- Evidence window: 2026-01-01 to 2026-03-06.
-- Evidence sources: Official product/blog updates + community sentiment threads.
-- Confidence: Low.
-- Caveats / failure modes: Public, reproducible usage metrics are limited.
-- Last verified: 2026-03-06.
+- Evidence window: 2025-12-01 to 2026-03-09.
+- Evidence sources: Official product + acquisition reporting.
+- Confidence: Medium.
+- Caveats / failure modes: Future product direction uncertain during Cognition integration. Public usage metrics remain limited.
+- Last verified: 2026-03-09.
 
 ## OpenAI Codex (CLI)
 - Link: https://github.com/openai/codex
@@ -148,10 +202,18 @@ Failure or procurement note:
 
 ## How to choose
 
+**For coding assistants (writing code in your own projects):**
 - Choose `Claude Code` when terminal-first velocity is your top priority.
 - Choose `GitHub Copilot` when you need mainstream IDE adoption and enterprise familiarity.
-- Choose `OpenHands` when autonomy experiments are central and you can enforce strong eval gates.
+- Choose `Cursor` when you want an AI-native IDE with strong agent loops.
 - Choose `Continue` when provider control and open-source customization matter most.
+- Choose `OpenHands` when autonomy experiments are central and you can enforce strong eval gates.
+
+**For app builders (going from idea to deployed app):**
+- Choose `Bolt.new` for the fastest prototyping with broadest framework support.
+- Choose `Lovable` when you need a full-stack app with database and auth (non-technical friendly).
+- Choose `v0` when UI quality and React component generation is the priority.
+- Choose `Replit Agent` for zero-setup browser-first building and mobile app creation.
 
 ## Verification status
 

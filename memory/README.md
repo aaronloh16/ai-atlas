@@ -36,6 +36,14 @@ Persistent and structured memory systems for long-running agents and personalize
 - Best for: Builders modeling entity/relationship memory.
 - Best paired with: Agent frameworks, observability.
 
+## Mem0
+- Link: https://github.com/mem0ai/mem0
+- Category: Memory
+- What it is: Universal memory layer for AI agents — dynamically extracts, consolidates, and retrieves salient information across sessions.
+- Why it matters: 26% improvement over OpenAI baselines on long-term memory benchmarks. Supports MCP server mode for integration with Claude Desktop, Cursor, and custom agents.
+- Best for: Teams building personalized AI products that need to remember user context across conversations.
+- Best paired with: Agent frameworks, MCP ecosystem, vector databases.
+
 ## Honorable mentions
 
 ## Related categories
