@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Atlas — Web Frontend
 
-## Getting Started
+A browsable frontend for the AI Atlas tool directory. Parses the markdown files from the repo and renders them as a searchable, categorized tool explorer.
 
-First, run the development server:
+## Tech stack
+
+- **Next.js 16** with App Router
+- **React 19**, **Tailwind CSS 4**
+- **gray-matter** + **remark** for parsing markdown tool entries
+- **Playwright** for E2E tests
+
+## Getting started
 
 ```bash
+cd web
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## How data flows
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Category markdown files live in the repo root (e.g., `../ai-coding-tools/README.md`)
+2. `src/lib/data.ts` reads and parses these files at build time using gray-matter and remark
+3. Pages render tool cards, categories, learning paths, and stacks from the parsed data
 
-## Learn More
+## Project structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+  app/
+    page.tsx              # Home page
+    HomeClient.tsx        # Client-side home component
+    layout.tsx            # Root layout
+    category/[slug]/      # Dynamic category pages
+    learning-paths/       # Learning paths page
+    stacks/               # Stacks page
+  components/
+    CategoryIcon.tsx      # Icons for each category
+    SearchBar.tsx         # Tool search
+    ToolCard.tsx          # Individual tool display
+  lib/
+    data.ts               # Markdown parsing and data layer
+e2e/                      # Playwright E2E tests
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Scripts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Command | What it does |
+|---|---|
+| `npm run dev` | Start dev server |
+| `npm run build` | Production build |
+| `npm run lint` | Run ESLint |
+| `npx playwright test` | Run E2E tests |

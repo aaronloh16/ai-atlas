@@ -16,6 +16,8 @@ Use this format:
 - Best paired with: What it works well with.
 ```
 
+See [how tools get picked](./research-method.md) for our selection criteria.
+
 ## Guidelines
 
 - **Link to the real thing** — official docs or primary GitHub repo, not a blog post about it.
