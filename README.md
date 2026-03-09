@@ -28,7 +28,7 @@ Most "AI directories" become noisy link dumps. AI Atlas is intentionally differe
 | Category | What's inside | Key tools |
 |---|---|---|
 | [AI Coding Tools](./ai-coding-tools/README.md) | IDE assistants, CLI agents, vibe coding platforms | Claude Code, Copilot, Cursor, Bolt.new, Lovable, v0, Replit Agent |
-| [Agent Frameworks](./agent-frameworks/README.md) | Orchestration for multi-step agent workflows | LangChain, OpenAI Agents SDK, Google ADK, CrewAI, Mastra |
+| [Agent Frameworks](./agent-frameworks/README.md) | Orchestration for multi-step agent workflows | LangChain, OpenAI Agents SDK, Google ADK, Anthropic Agent SDK, CrewAI, Mastra, PydanticAI |
 | [Autonomous Agents](./autonomous-agents/README.md) | End-to-end autonomous software development | Devin, OpenHands, Cline, Trae Agent |
 | [AI App Frameworks](./ai-app-frameworks/README.md) | UI/app layers for shipping AI features | Vercel AI SDK, Chainlit, Dify, Flowise, Gradio, Streamlit |
 

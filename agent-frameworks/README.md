@@ -15,9 +15,9 @@ Frameworks for orchestrating tools, memory, planning, and multi-step agent workf
 ## AutoGen
 - Link: https://github.com/microsoft/autogen
 - Category: Agent Frameworks
-- What it is: Microsoft framework for multi-agent conversations and workflow orchestration.
-- Why it matters: Strong abstractions for role-based agents and collaborative execution.
-- Best for: Builders designing multi-agent systems.
+- What it is: Microsoft framework for multi-agent conversations and workflow orchestration. Being merged with Semantic Kernel into a unified Microsoft Agent Framework.
+- Why it matters: Strong abstractions for role-based agents and collaborative execution. 45K+ GitHub stars.
+- Best for: Builders designing multi-agent systems in the Microsoft ecosystem.
 - Best paired with: Semantic Kernel, Promptfoo, Langfuse.
 
 ## CrewAI
@@ -86,6 +86,30 @@ Frameworks for orchestrating tools, memory, planning, and multi-step agent workf
 - Best for: Researchers and advanced builders tuning quality systematically.
 - Best paired with: Promptfoo, OpenAI Evals.
 
+## Anthropic Agent SDK
+- Link: https://docs.anthropic.com/en/docs/agent-sdk
+- Category: Agent Frameworks
+- What it is: Anthropic's SDK for building agents with the same loop and tools that power Claude Code — file read/write, shell, web, code editing.
+- Why it matters: First-party SDK from Anthropic. Gives agents a full computer environment. Apple Xcode 26.3 integration signals enterprise reach.
+- Best for: Teams building on Claude who want the same agent capabilities as Claude Code, programmatically.
+- Best paired with: Claude models, MCP, Langfuse.
+
+## PydanticAI
+- Link: https://github.com/pydantic/pydantic-ai
+- Category: Agent Frameworks
+- What it is: Type-safe agent framework from the Pydantic team — full type safety, structured outputs, durable execution, MCP/A2A integration.
+- Why it matters: Brings the "FastAPI feeling" to agent development. Pydantic already underpins OpenAI SDK, Google ADK, LangChain, and others.
+- Best for: Python teams that want type-safe, production-grade agent development.
+- Best paired with: FastAPI, Promptfoo, Langfuse.
+
+## smolagents
+- Link: https://github.com/huggingface/smolagents
+- Category: Agent Frameworks
+- What it is: Hugging Face's minimalist library for building code-writing agents — core logic in ~1,000 lines. Agents write Python to invoke tools.
+- Why it matters: Code agents reduce LLM calls by ~30% vs standard tool-calling. Model-agnostic, sandboxed execution, Hub integration for sharing.
+- Best for: Builders who want a lightweight, code-first agent approach with HuggingFace ecosystem support.
+- Best paired with: HuggingFace Hub, local models, Ollama.
+
 ## OpenClaw
 - Link: https://github.com/openclaw/openclaw
 - Category: Agent Frameworks
@@ -105,7 +129,10 @@ Frameworks for orchestrating tools, memory, planning, and multi-step agent workf
 - Start with `LangChain` for ecosystem breadth and Python flexibility.
 - Use `OpenAI Agents SDK` for simple, opinionated agent loops on OpenAI models.
 - Use `Google ADK` for Gemini-native multi-agent orchestration.
+- Use `Anthropic Agent SDK` for Claude-powered agents with full computer environment.
 - Use `Mastra` for TypeScript-first agent development.
+- Use `PydanticAI` for type-safe Python agents with structured outputs.
 - Use `CrewAI`/`AutoGen` for role-based multi-agent workflows.
+- Use `smolagents` for lightweight code-writing agents with HuggingFace.
 - Use `Semantic Kernel` for enterprise SDK patterns.
 - Use `LlamaIndex`/`Haystack` when retrieval quality is central.
