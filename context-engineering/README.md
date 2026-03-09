@@ -36,6 +36,14 @@ Tools and patterns that improve context quality for coding and agent workflows.
 - Best for: Developers feeding codebases to Claude, ChatGPT, or any LLM for analysis, planning, or code review.
 - Best paired with: Claude Code, Cursor, MCP ecosystem.
 
+## Firecrawl
+- Link: https://github.com/mendableai/firecrawl
+- Category: Context Engineering
+- What it is: Web data API that turns websites into LLM-ready markdown or structured data. Handles JS-heavy pages, covers 96% of the web with sub-second response times. Has MCP server and agent endpoint.
+- Why it matters: Essential for agents that need real-time web context without managing headless browsers. The `/agent` endpoint can autonomously navigate complex sites.
+- Best for: Teams building agents or RAG pipelines that need clean web data as context.
+- Best paired with: MCP ecosystem, RAG frameworks, agent frameworks.
+
 ## Honorable mentions
 
 ## MCP

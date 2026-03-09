@@ -35,15 +35,15 @@ Most "AI directories" become noisy link dumps. AI Atlas is intentionally differe
 ### Connect and extend
 | Category | What's inside | Key tools |
 |---|---|---|
-| [MCP](./mcp/README.md) | Model Context Protocol ecosystem | MCP spec, official servers, GitHub MCP, directories |
-| [Context Engineering](./context-engineering/README.md) | Improve context quality for agents | Repomix, React Grab, Jina Reader |
-| [Browser Agents](./browser-agents/README.md) | Web automation and computer-use | Stagehand, browser-use, Playwright MCP |
+| [MCP](./mcp/README.md) | Model Context Protocol ecosystem | MCP spec, Playwright MCP, Context7, Stripe MCP, Cloudflare MCP, Supabase MCP |
+| [Context Engineering](./context-engineering/README.md) | Improve context quality for agents | Repomix, Firecrawl, React Grab, Jina Reader |
+| [Browser Agents](./browser-agents/README.md) | Web automation and computer-use | Stagehand, browser-use, Playwright MCP, Browserbase |
 
 ### Data and memory
 | Category | What's inside | Key tools |
 |---|---|---|
 | [RAG Indexing](./rag-indexing/README.md) | Document processing and retrieval | LlamaIndex, LangChain, Haystack, Unstructured |
-| [Memory](./memory/README.md) | Persistent memory for long-running agents | Mem0, MemGPT/Letta, Zep, Supermemory |
+| [Memory](./memory/README.md) | Persistent memory for long-running agents | Mem0, Letta, Zep, Supermemory |
 | [Vector Databases](./vector-databases/README.md) | Embedding storage and semantic search | Qdrant, Pinecone, Weaviate, Chroma, pgvector, Milvus |
 
 ### Run and serve

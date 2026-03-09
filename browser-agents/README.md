@@ -28,6 +28,14 @@ Tools for automating web navigation, browser actions, and computer-use tasks wit
 - Best for: Agent builders who need reliable web interaction without vision model overhead.
 - Best paired with: MCP ecosystem, Stagehand, agent frameworks.
 
+## Browserbase
+- Link: https://www.browserbase.com
+- Category: Browser Agents
+- What it is: Cloud browser infrastructure for AI agents — managed headless browsers with stealth mode, CAPTCHA handling, session persistence, and autoscaling. Created Stagehand.
+- Why it matters: Solves the hardest operational problem for browser agents: running browsers at scale in the cloud. Used by Vercel, Perplexity. SOC-2 and HIPAA compliant.
+- Best for: Teams deploying browser agents in production who need managed infrastructure.
+- Best paired with: Stagehand, Playwright MCP, agent frameworks.
+
 ## Honorable mentions
 
 ## Related categories
