@@ -20,6 +20,22 @@ Tools for automating web navigation, browser actions, and computer-use tasks wit
 - Best for: Builders prototyping computer-use assistants.
 - Best paired with: Agent frameworks, eval stacks.
 
+## Playwright MCP
+- Link: https://github.com/microsoft/playwright-mcp
+- Category: Browser Agents
+- What it is: MCP server that gives AI agents browser automation capabilities via Playwright — uses structured accessibility snapshots instead of vision models.
+- Why it matters: Connects browser automation directly to any MCP-compatible agent (Claude, Cursor, etc.) without screenshots or computer-use models.
+- Best for: Agent builders who need reliable web interaction without vision model overhead.
+- Best paired with: MCP ecosystem, Stagehand, agent frameworks.
+
+## Browserbase
+- Link: https://www.browserbase.com
+- Category: Browser Agents
+- What it is: Cloud browser infrastructure for AI agents — managed headless browsers with stealth mode, CAPTCHA handling, session persistence, and autoscaling. Created Stagehand.
+- Why it matters: Solves the hardest operational problem for browser agents: running browsers at scale in the cloud. Used by Vercel, Perplexity. SOC-2 and HIPAA compliant.
+- Best for: Teams deploying browser agents in production who need managed infrastructure.
+- Best paired with: Stagehand, Playwright MCP, agent frameworks.
+
 ## Honorable mentions
 
 ## Related categories

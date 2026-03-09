@@ -4,6 +4,14 @@ Autonomous or semi-autonomous systems that execute multi-step software tasks wit
 
 ## Top tools
 
+## Devin
+- Link: https://devin.ai
+- Category: Autonomous Agents
+- What it is: Autonomous AI software engineer by Cognition AI — plans, codes, tests, and iterates in its own sandboxed environment with repo, terminal, and browser access.
+- Why it matters: The archetype for fully autonomous coding agents. Cognition acquired Windsurf (~$250M) to merge IDE + autonomous agent capabilities.
+- Best for: Teams delegating well-scoped engineering tasks (bug fixes, migrations, feature implementation) to an AI teammate.
+- Best paired with: CI/CD pipelines, Langfuse, code review workflows.
+
 ## OpenHands
 - Link: https://github.com/OpenHands/OpenHands
 - Category: Autonomous Agents

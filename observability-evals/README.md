@@ -56,6 +56,22 @@ Use this baseline before giving coding agents repository write access:
 - Keep model routing fallback (`LiteLLM` or gateway) to reduce outage risk.
 - Maintain incident playbook and rollback path for failed agent changes.
 
+## Braintrust
+- Link: https://www.braintrust.dev
+- Category: Observability Evals
+- What it is: AI observability platform that integrates evaluation directly into the observability workflow — logs, scores, and traces in one place.
+- Why it matters: Only platform that closes the loop between production tracing and eval scoring. Customizable metrics for agent quality.
+- Best for: Teams that want evals and observability in a single workflow rather than separate tools.
+- Best paired with: Langfuse (complementary), Promptfoo, agent frameworks.
+
+## Helicone
+- Link: https://www.helicone.ai
+- Category: Observability Evals
+- What it is: Open-source LLM observability platform built on Cloudflare Workers — proxy-based architecture for cost, latency, and usage tracking.
+- Why it matters: Fast setup (one-line proxy integration), free tier with 10K requests/month, strong cost tracking and caching. Built on ClickHouse and Kafka.
+- Best for: Teams focused on cost optimization and usage analytics across multiple LLM providers.
+- Best paired with: Braintrust (for evals), LiteLLM, Portkey Gateway.
+
 ## Honorable mentions
 
 ## Portkey Gateway
