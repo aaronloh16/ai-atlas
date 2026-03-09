@@ -187,6 +187,45 @@ Failure or procurement note:
 - Caveats / failure modes: Operational risk still depends on command sandboxing and permission model.
 - Last verified: 2026-03-06.
 
+## Gemini CLI
+- Link: https://github.com/google-gemini/gemini-cli
+- Category: AI Coding Tools
+- What it is: Google's open-source terminal-first AI coding agent with 1M token context window via Gemini models.
+- Why it matters: Free tier with generous limits (60 req/min, 1,000 req/day). MCP support. Also powers Gemini Code Assist agent mode in VS Code.
+- Best for: Developers wanting free, high-context-window CLI coding with Google ecosystem integration.
+- Best paired with: Google ADK, MCP, Langfuse.
+- Evidence window: 2025-06-01 to 2026-03-09.
+- Evidence sources: GitHub repository + npm downloads API (already tracked in evidence snapshot).
+- Confidence: High.
+- Caveats / failure modes: Newer entrant with smaller community than Claude Code or Codex CLI. Google ecosystem dependency.
+- Last verified: 2026-03-09.
+
+## Aider
+- Link: https://github.com/paul-gauthier/aider
+- Category: AI Coding Tools
+- What it is: Open-source terminal AI pair programmer with deep Git integration — automatic commits, multi-file editing, codebase mapping, voice-to-code. Works with 100+ languages and multiple LLMs.
+- Why it matters: Universally cited in 2026 AI coding tool roundups. 25K+ GitHub stars. Unique in combining Git-native workflow with broad model support (not locked to one provider).
+- Best for: Developers who want an open-source, provider-agnostic CLI coding partner with Git-first workflow.
+- Best paired with: Ollama (local models), Claude/GPT APIs, Git workflows.
+- Evidence window: 2025-01-01 to 2026-03-09.
+- Evidence sources: GitHub metrics + multiple third-party roundups + official docs.
+- Confidence: High.
+- Caveats / failure modes: CLI-only; no IDE extension. Requires comfort with terminal workflows.
+- Last verified: 2026-03-09.
+
+## Amazon Q Developer
+- Link: https://aws.amazon.com/q/developer/
+- Category: AI Coding Tools
+- What it is: AWS's AI coding assistant with deep AWS service integration — available in VS Code, JetBrains, CLI. Agentic capabilities with security scanning.
+- Why it matters: Achieved highest scores on SWE-Bench Leaderboard. Free tier with 50 agentic interactions/month. Backed by AWS enterprise distribution.
+- Best for: Teams building on AWS who want AI coding assistance with native cloud service awareness.
+- Best paired with: AWS services, JetBrains IDEs, CI/CD pipelines.
+- Evidence window: 2025-01-01 to 2026-03-09.
+- Evidence sources: Official product + SWE-Bench results + AWS documentation.
+- Confidence: High.
+- Caveats / failure modes: Strongest value proposition is AWS-specific; less differentiated for non-AWS workflows.
+- Last verified: 2026-03-09.
+
 ## Evidence snapshot (March 6, 2026)
 - Claude Code npm monthly downloads: [API](https://api.npmjs.org/downloads/point/last-month/@anthropic-ai/claude-code)
 - OpenAI Codex npm monthly downloads: [API](https://api.npmjs.org/downloads/point/last-month/@openai/codex)
@@ -206,6 +245,9 @@ Failure or procurement note:
 - Choose `Claude Code` when terminal-first velocity is your top priority.
 - Choose `GitHub Copilot` when you need mainstream IDE adoption and enterprise familiarity.
 - Choose `Cursor` when you want an AI-native IDE with strong agent loops.
+- Choose `Aider` when you want open-source, provider-agnostic CLI coding with Git-native workflow.
+- Choose `Gemini CLI` for free, high-context-window CLI coding in the Google ecosystem.
+- Choose `Amazon Q Developer` when building on AWS and you need cloud-service-aware assistance.
 - Choose `Continue` when provider control and open-source customization matter most.
 - Choose `OpenHands` when autonomy experiments are central and you can enforce strong eval gates.
 

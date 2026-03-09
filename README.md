@@ -1,6 +1,6 @@
 # AI Atlas
 
-A curated map of the tools, frameworks, protocols, and workflows that matter for building with AI — **115+ tools across 18 categories**.
+A curated map of the tools, frameworks, protocols, and workflows that matter for building with AI — **120+ tools across 18 categories**.
 
 For developers, builders, and curious semi-technical people who want one place to stay caught up with AI without drowning in hype, spam, and scattered bookmarks.
 
@@ -27,7 +27,7 @@ Most "AI directories" become noisy link dumps. AI Atlas is intentionally differe
 ### Build with AI
 | Category | What's inside | Key tools |
 |---|---|---|
-| [AI Coding Tools](./ai-coding-tools/README.md) | IDE assistants, CLI agents, vibe coding platforms | Claude Code, Copilot, Cursor, Bolt.new, Lovable, v0, Replit Agent |
+| [AI Coding Tools](./ai-coding-tools/README.md) | IDE assistants, CLI agents, vibe coding platforms | Claude Code, Copilot, Cursor, Aider, Gemini CLI, Amazon Q, Bolt.new, Lovable, v0, Replit Agent |
 | [Agent Frameworks](./agent-frameworks/README.md) | Orchestration for multi-step agent workflows | LangChain, OpenAI Agents SDK, Google ADK, Anthropic Agent SDK, CrewAI, Mastra, PydanticAI |
 | [Autonomous Agents](./autonomous-agents/README.md) | End-to-end autonomous software development | Devin, OpenHands, Cline, Trae Agent |
 | [AI App Frameworks](./ai-app-frameworks/README.md) | UI/app layers for shipping AI features | Vercel AI SDK, Chainlit, Dify, Flowise, Gradio, Streamlit |
