@@ -3,9 +3,9 @@ import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "AI Atlas — Navigate the AI Ecosystem",
+  title: "AI Atlas — Cool AI tools in one place",
   description:
-    "A curated map of the tools, frameworks, protocols, and workflows that matter for building with AI.",
+    "A collection of cool AI tools, frameworks, and workflows. Work in progress — contributions welcome.",
 };
 
 export default function RootLayout({
@@ -58,6 +58,12 @@ export default function RootLayout({
                 >
                   Stacks
                 </Link>
+                <Link
+                  href="/learning-paths"
+                  className="text-sm text-muted hover:text-foreground transition-colors"
+                >
+                  Learn
+                </Link>
                 <a
                   href="https://github.com/aaronloh16/ai-atlas"
                   target="_blank"
@@ -80,7 +86,7 @@ export default function RootLayout({
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted">
               <p>
-                AI Atlas — Curated for signal, not volume.
+                AI Atlas — Very much a work in progress.
               </p>
               <p>
                 MIT License

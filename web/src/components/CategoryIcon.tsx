@@ -17,6 +17,7 @@ import {
   Mic,
   Package,
   Folder,
+  GraduationCap,
 } from "lucide-react";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -38,6 +39,7 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   Mic,
   Package,
   Folder,
+  GraduationCap,
 };
 
 export function CategoryIcon({

@@ -14,17 +14,19 @@ export default function Home() {
       <section className="text-center py-16 sm:py-24">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light border border-accent/20 mb-6">
           <span className="w-1.5 h-1.5 rounded-full bg-success animate-pulse" />
-          {totalTools} tools tracked across {categories.length} categories
+          {totalTools}+ tools across {categories.length} categories &middot; work in progress
         </div>
         <h1 className="text-4xl sm:text-6xl font-bold tracking-tight mb-4">
-          Navigate the{" "}
+          Cool{" "}
           <span className="bg-gradient-to-r from-accent-light to-purple-400 bg-clip-text text-transparent">
-            AI Ecosystem
+            AI tools
           </span>
+          {" "}in one place
         </h1>
         <p className="text-lg text-muted max-w-2xl mx-auto mb-10">
-          A curated map of the tools, frameworks, protocols, and workflows that
-          matter for building with AI. Signal over noise.
+          You know that feeling when a friend shows you their setup and it&apos;s way
+          better than yours? So I started putting everything in one place — the
+          tools, the stacks, the workflows.
         </p>
         <HomeClient categories={categories} allTools={allTools} />
       </section>
@@ -79,30 +81,52 @@ export default function Home() {
               Opinionated starter stacks for common AI builder goals.
             </p>
           </Link>
+
+          {/* Learning Paths card */}
+          <Link
+            href="/learning-paths"
+            className="glass-card rounded-xl p-5 group border-accent/20"
+          >
+            <div className="flex items-center gap-3 mb-3">
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent/10 text-accent-light group-hover:bg-accent/20 transition-colors">
+                <CategoryIcon icon="GraduationCap" className="w-5 h-5" />
+              </div>
+              <div>
+                <h3 className="font-semibold text-foreground text-sm">
+                  Learning Paths
+                </h3>
+                <p className="text-xs text-muted">28 challenges</p>
+              </div>
+            </div>
+            <p className="text-sm text-muted leading-relaxed line-clamp-2">
+              Concrete things to build and explore if you want to learn AI tools.
+            </p>
+          </Link>
         </div>
       </section>
 
       {/* Quick stats */}
       <section className="pb-16">
         <div className="glass-card rounded-xl p-8">
-          <h2 className="text-xl font-semibold mb-6">Why AI Atlas?</h2>
+          <h2 className="text-xl font-semibold mb-2">Where to start</h2>
+          <p className="text-sm text-muted mb-6">There are gaps, things that are out of date, and whole categories that probably need to exist but don&apos;t yet. But here&apos;s the idea:</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                label: "Curated for signal",
-                desc: "Every entry is reviewed for evidence and relevance, not bulk-added.",
+                label: "New to AI?",
+                desc: "Check out Learning Paths — concrete challenges from beginner to advanced.",
               },
               {
-                label: "Canonical links",
-                desc: "Direct links to official docs and repos, not copied summaries.",
+                label: "Building something?",
+                desc: "Browse Stack Recipes for opinionated starter architectures.",
               },
               {
-                label: "Ecosystem context",
-                desc: "Tool relationships, stack fit, and pairing recommendations.",
+                label: "Just browsing?",
+                desc: "Explore the categories above and see what catches your eye.",
               },
               {
-                label: "Freshness tracked",
-                desc: "Evidence windows and verification dates on every entry.",
+                label: "Got something good?",
+                desc: "This needs a lot of help. Open a PR if you know a tool that should be here.",
               },
             ].map((item) => (
               <div key={item.label}>

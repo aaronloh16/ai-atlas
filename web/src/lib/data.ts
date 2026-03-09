@@ -35,6 +35,20 @@ export interface StackRecipe {
   content: string;
 }
 
+export interface LearningChallenge {
+  title: string;
+  link?: string;
+  whatItIs?: string;
+  whyItMatters?: string;
+  bestFor?: string;
+  bestPairedWith: string[];
+}
+
+export interface LearningSection {
+  name: string;
+  challenges: LearningChallenge[];
+}
+
 const CATEGORY_ICONS: Record<string, string> = {
   "ai-coding-tools": "Code",
   "agent-frameworks": "Bot",
@@ -229,6 +243,55 @@ export function getCategory(slug: string): Category | null {
 export function getAllTools(): Tool[] {
   const categories = getAllCategories();
   return categories.flatMap((c) => c.tools);
+}
+
+export function getLearningPaths(): LearningSection[] {
+  const readmePath = path.join(REPO_ROOT, "learning-paths", "README.md");
+  if (!fs.existsSync(readmePath)) return [];
+
+  const content = fs.readFileSync(readmePath, "utf-8");
+  const sections: LearningSection[] = [];
+  let currentSection: LearningSection | null = null;
+
+  // Split on ## and ### headers
+  const blocks = content.split(/(?=^###? )/m);
+
+  for (const block of blocks) {
+    const sectionMatch = block.match(/^## (.+)$/m);
+    if (sectionMatch) {
+      currentSection = { name: sectionMatch[1].trim(), challenges: [] };
+      sections.push(currentSection);
+      continue;
+    }
+
+    const challengeMatch = block.match(/^### (.+)$/m);
+    if (challengeMatch && currentSection) {
+      const getField = (label: string): string => {
+        const re = new RegExp(`^- ${label}:\\s*(.+)$`, "m");
+        const m = block.match(re);
+        return m ? m[1].trim() : "";
+      };
+
+      const linkField = getField("Link");
+      const bestPaired = getField("Best paired with");
+
+      currentSection.challenges.push({
+        title: challengeMatch[1].trim(),
+        link: linkField || undefined,
+        whatItIs: getField("What it is") || undefined,
+        whyItMatters: getField("Why it matters") || undefined,
+        bestFor: getField("Best for") || undefined,
+        bestPairedWith: bestPaired
+          ? bestPaired
+              .split(",")
+              .map((s) => s.replace(/\[|\]|\(.*?\)/g, "").trim())
+              .filter(Boolean)
+          : [],
+      });
+    }
+  }
+
+  return sections;
 }
 
 export function getStackRecipes(): StackRecipe[] {
