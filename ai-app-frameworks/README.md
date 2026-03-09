@@ -36,6 +36,14 @@ Frameworks and app layers for shipping AI features, chat products, and agentic u
 - Best for: Teams needing an integrated app platform.
 - Best paired with: LiteLLM, observability tools.
 
+## Langflow
+- Link: https://github.com/langflow-ai/langflow
+- Category: AI App Frameworks
+- What it is: Visual AI workflow builder with drag-and-drop interface plus full Python code access. MCP support, REST API from every workflow. Integrated with IBM watsonx.
+- Why it matters: 100K+ GitHub stars — one of the top AI repos on GitHub. Best of both worlds: visual prototyping for non-technical users + Python extensibility for developers.
+- Best for: Teams that want visual workflow building without sacrificing code access.
+- Best paired with: LangChain, vector databases, LiteLLM.
+
 ## Honorable mentions
 
 ## Gradio
@@ -62,5 +70,6 @@ Frameworks and app layers for shipping AI features, chat products, and agentic u
 ## How to choose
 
 - Use `Vercel AI SDK` for TypeScript-first product teams.
+- Use `Langflow` for visual workflow building with Python escape hatches.
 - Use `Chainlit` for conversational prototypes.
 - Use `Flowise`/`Dify` when low-code orchestration speed matters.

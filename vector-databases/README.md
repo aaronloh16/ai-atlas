@@ -46,6 +46,14 @@ Core storage and retrieval engines for embeddings, semantic search, and hybrid r
 
 ## Honorable mentions
 
+## Turbopuffer
+- Link: https://turbopuffer.com
+- Category: Vector Databases
+- What it is: Serverless vector + full-text search database built on object storage (S3/GCS) — 10-100x cheaper than alternatives at $0.02/GB.
+- Why it matters: Used by Cursor, Notion, Linear, Superhuman. 2.5T+ documents, 10M+ writes/s. Notion cut costs 80%, Cursor saved 95% on storage. Revenue in tens of millions ARR.
+- Best for: Teams with large-scale vector workloads who need dramatically lower cost without sacrificing performance.
+- Best paired with: RAG frameworks, agent systems, any high-volume embedding pipeline.
+
 ## FAISS
 - Link: https://github.com/facebookresearch/faiss
 - Category: Vector Databases
@@ -71,6 +79,7 @@ Core storage and retrieval engines for embeddings, semantic search, and hybrid r
 
 - Start with `Qdrant` for balanced open-source default.
 - Choose `Pinecone` when you want fully managed with enterprise features.
+- Choose `Turbopuffer` when cost is the priority at scale (object-storage-native).
 - Use `pgvector` when you already have PostgreSQL and want to avoid a new service.
 - Move to `Milvus` for larger-scale workloads.
 - Use `Chroma` for rapid prototyping and local iteration.
