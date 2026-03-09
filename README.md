@@ -34,6 +34,7 @@ Included:
 - Curated explainers
 - Communities and discovery sources
 - Stack recipes
+- Learning paths for getting started
 
 Out of scope:
 - Generic AI startup directory
@@ -60,6 +61,7 @@ Out of scope:
 - [Communities](./communities/README.md)
 - [External Lists](./external-lists/README.md)
 - [Stacks](./stacks/README.md)
+- [Learning Paths](./learning-paths/README.md)
 - [Research Method](./research-method.md)
 - [March 2026 Sentiment Report](./reports/mar-2026-tool-sentiment.md)
 
